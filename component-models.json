@@ -239,17 +239,11 @@
         "valueType": "boolean"
       },
       {
-        "component": "text-input",
-        "label": "Hidden text field",
-        "name": "hidden-text",
-        "valueType": "string",
-        "condition": { "===": [{"var" : "reveal"}, true] }
-      },
-      {
       "component": "multiselect",
       "name": "heading-type",
       "label": "Heading type",
       "valueType": "string",
+      "condition": { "===": [{"var" : "reveal"}, true] },
       "required": true,
       "maxSize": 1,
       "options": [
