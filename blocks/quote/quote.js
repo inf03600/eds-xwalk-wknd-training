@@ -11,6 +11,9 @@ export default function decorate(block) {
 
 export default async function decorate(block) {
 	const placeholders = await fetchPlaceholders();
-  blockquote.append(placeholders);
-
+  const myQuote = placeholders.quoteText;
+  const blockquote = block.querySelector('blockquote');
+  if (blockquote) {
+    blockquote.textContent = myQuote;
+  }
 }
