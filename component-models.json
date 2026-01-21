@@ -231,7 +231,20 @@
        "name": "author",
        "label": "Author",
        "value": ""
-     }
+     },
+     {
+        "component": "boolean",
+        "label": "Shall the text field be revealed?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      }
    ]
 }
 ]
