@@ -245,10 +245,10 @@
       "valueType": "string",
       "condition": { "===": [{"var" : "reveal"}, true] },
       "required": true,
-      "maxSize": 1,
+      "maxSize": 2,
       "options": [
         {
-          "name": "Type",
+          "name": "Heading",
           "children": [
             { "name": "h1", "value": "h1" },
             { "name": "h2", "value": "h2" },
