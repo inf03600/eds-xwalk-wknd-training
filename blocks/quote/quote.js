@@ -7,16 +7,17 @@ export default async function decorate(block) {
   blockquote.textContent = quoteWrapper.textContent.trim();
   quoteWrapper.replaceChildren(blockquote);
 
-  // const { quoteText } = placeholders;
-  // blockquote.append(quoteText);
-  // quoteWrapper.replaceChildren(blockquote);
-    console.log('quote loaded');
-    const placeholders = await fetchPlaceholders();
-    console.log('loaded placeholders',placeholders);
-    if(placeholders.quoteText) {
-        //const suffix = document.createElement('div');
-        //suffix.className='quoteText';
-        quoteWrapper.textContent= placeholders.quoteText;
-        block.appendChild(blockquote);
-    }
+  const { quoteText } = placeholders;
+  blockquote.append(quoteText);
+  quoteWrapper.replaceChildren(blockquote);
+  
+    // console.log('quote loaded');
+    // const placeholders = await fetchPlaceholders();
+    // console.log('loaded placeholders',placeholders);
+    // if(placeholders.quoteText) {
+    //     //const suffix = document.createElement('div');
+    //     //suffix.className='quoteText';
+    //     quoteWrapper.textContent= placeholders.quoteText;
+    //     block.appendChild(blockquote);
+    // }
 }
