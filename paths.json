@@ -2,7 +2,8 @@
   "mappings": [
     "/content/eds-xwalk-wknd-training-site/:/",
     "/content/eds-xwalk-wknd-training-site/configuration:/.helix/config.json",
-    "/content/eds-xwalk-wknd-training-site/metadata:/metadata.json"
+    "/content/eds-xwalk-wknd-training-site/metadata:/metadata.json",
+    "/content/eds-xwalk-wknd-training-site/taxonomy:/taxonomy.json"
   ],
   "includes": [
     "/content/eds-xwalk-wknd-training-site/"
