@@ -10,7 +10,7 @@ export default function decorate(block) {
 
   const { quoteText } = placeholders;
   blockquote.append(quoteText);
-  div.append(blockquote);
+  quoteWrapper.replaceChildren(quoteText);
 
 }
 
