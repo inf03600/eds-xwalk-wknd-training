@@ -16,7 +16,7 @@ export default async function decorate(block) {
   //   }   
   const { quoteText } = placeholders;
   blockquote.append(quoteText);
-  //quoteWrapper.replaceChildren(blockquote);
+  quoteWrapper.replaceChildren(blockquote);
   
     // console.log('quote loaded');
     // const placeholders = await fetchPlaceholders();
