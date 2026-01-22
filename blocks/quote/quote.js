@@ -7,6 +7,7 @@ export default async function decorate(block) {
   blockquote.textContent = quoteWrapper.textContent.trim();
   quoteWrapper.replaceChildren(blockquote);
 
+  const placeholders = await fetchPlaceholders();
   const { quoteText } = placeholders;
   blockquote.append(quoteText);
   quoteWrapper.replaceChildren(blockquote);
