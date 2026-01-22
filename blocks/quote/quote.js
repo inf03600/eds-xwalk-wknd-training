@@ -14,9 +14,9 @@ export default function decorate(block) {
     const placeholders = await fetchPlaceholders();
     console.log('loaded placeholders',placeholders);
     if(placeholders.quoteText) {
-        const suffix = document.createElement('div');
-        suffix.className='quoteText';
-        suffix.textContent= placeholders.quoteText;
-        block.appendChild(suffix);
+        //const suffix = document.createElement('div');
+        //suffix.className='quoteText';
+        quoteWrapper.textContent= placeholders.quoteText;
+        block.appendChild(blockquote);
     }
 }
