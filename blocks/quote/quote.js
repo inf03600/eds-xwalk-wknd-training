@@ -8,14 +8,14 @@ export default async function decorate(block) {
   quoteWrapper.replaceChildren(blockquote);
 
   const placeholders = await fetchPlaceholders();
-  if(placeholders.quoteText) {
-        const suffix = document.createElement('div');
-        suffix.className='quoteText';
-        suffix.textContent= placeholders.quoteText;
-        block.appendChild(suffix);
-    }   
-  //const { quoteText } = placeholders;
-  //blockquote.append(quoteText);
+  // if(placeholders.quoteText) {
+  //       const suffix = document.createElement('div');
+  //       suffix.className='quoteText';
+  //       suffix.textContent= placeholders.quoteText;
+  //       block.appendChild(suffix);
+  //   }   
+  const { quoteText } = placeholders;
+  blockquote.append(quoteText);
   //quoteWrapper.replaceChildren(blockquote);
   
     // console.log('quote loaded');
