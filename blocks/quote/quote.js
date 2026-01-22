@@ -10,10 +10,6 @@ export default function decorate(block) {
   // const { quoteText } = placeholders;
   // blockquote.append(quoteText);
   // quoteWrapper.replaceChildren(blockquote);
-
-}
-
-export default async function decorate(block) {
     console.log('quote loaded');
     const placeholders = await fetchPlaceholders();
     console.log('loaded placeholders',placeholders);
