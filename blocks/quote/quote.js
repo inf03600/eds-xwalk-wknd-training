@@ -9,7 +9,8 @@ export default async function decorate(block) {
 
   const placeholders = await fetchPlaceholders();
   if(placeholders.quoteText) {
-        const suffix = document.createElement('div');
+    console.log('quote loaded');
+        const suffix = document.createElement('blockquote');
         suffix.className='quoteText';
         suffix.textContent = placeholders.quoteText;
         block.appendChild(suffix);
