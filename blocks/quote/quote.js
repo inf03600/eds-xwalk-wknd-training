@@ -13,7 +13,7 @@ export default async function decorate(block) {
         const suffix = document.createElement('blockquote');
         suffix.className='quoteText';
         suffix.textContent = placeholders.quoteText;
-        block.append(suffix.textContent);
+        block.append(placeholders.quoteText);
   
   //const { quoteText } = placeholders;
   //blockquote.append(quoteText);
